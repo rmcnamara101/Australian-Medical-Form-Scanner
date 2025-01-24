@@ -1,0 +1,39 @@
+layout-detection-model/
+│
+├── datasets/
+│   ├── annotations/       # Annotations for training and testing (e.g., COCO format JSON files)
+│   ├── images/            # Original and augmented images for training/testing
+│   └── scripts/           # Scripts for dataset preparation and augmentation
+│
+├── models/
+│   ├── trained/           # Saved trained models
+│   └── scripts/           # Custom model training and evaluation scripts
+│
+├── src/
+│   ├── __init__.py
+│   ├── inference/         # Scripts for running inference with the trained model
+│   │   ├── detect_fields.py
+│   │   └── utils.py
+│   ├── preprocessing/     # Image scaling and preprocessing
+│   │   ├── prepare_image.py
+│   │   ├── resize.py
+│   │   └── normalize.py
+│   ├── postprocessing/    # Post-detection cleanup and validation
+│   │   ├── clean_fields.py
+│   │   ├── validate_fields.py
+│   │   └── format_output.py
+│   └── visualization/     # Scripts for visualizing detection results
+│       └── visualize_layout.py
+│
+├── notebooks/             # Jupyter notebooks for exploration and debugging
+│   ├── data_inspection.ipynb
+│   └── training_analysis.ipynb
+│
+├── tests/                 # Unit tests
+│   ├── test_preprocessing.py
+│   ├── test_inference.py
+│   └── test_postprocessing.py
+│
+├── requirements.txt       # Dependencies
+├── README.md              # Project documentation
+└── .gitignore             # Ignore unnecessary files
