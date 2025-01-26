@@ -1,6 +1,9 @@
 _BASE_: "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/.venv/lib/python3.8/site-packages/detectron2/model_zoo/configs/COCO-Detection/fast_rcnn_R_50_FPN_1x.yaml"
 
 MODEL:
+  PROPOSAL_GENERATOR:
+    NAME: "RPN"
+  LOAD_PROPOSALS: False
   WEIGHTS: "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/models/pretrained/pretrained1.pkl"
   ROI_HEADS:
     NUM_CLASSES: 9
@@ -10,6 +13,7 @@ DATASETS:
   TEST: ("my_val_dataset",)
 
 SOLVER:
+  IMS_PER_BATCH: 2
   MAX_ITER: 2000
   BASE_LR: 0.001
 
