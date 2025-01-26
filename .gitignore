@@ -6,3 +6,4 @@ datasets/scans/
 datasets/images/train/
 datasets/images/val/
 datasets/prepped/
+models/pretrained/
