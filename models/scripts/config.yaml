@@ -13,8 +13,16 @@ DATASETS:
   TEST: ("my_val_dataset",)
 
 SOLVER:
-  IMS_PER_BATCH: 2
+  IMS_PER_BATCH: 1
   MAX_ITER: 2000
   BASE_LR: 0.001
+
+INPUT:
+  MIN_SIZE_TRAIN: (600,)
+  MAX_SIZE_TRAIN: 1000
+
+DATALOADER:
+  NUM_WORKERS: 0
+
 
 OUTPUT_DIR: "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/models/trained"
