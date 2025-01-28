@@ -12,7 +12,7 @@ from detectron2.data import MetadataCatalog
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # The root "datasets" folder you mentioned
-DATASET_DIR = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/datasets"
+DATASET_DIR = "/home/rileymcnamara09/Australian-Medical-Form-Scanner/datasets"
 
 # Paths to your COCO-JSON annotations
 TRAIN_JSON = os.path.join(DATASET_DIR, "annotations", "train.json")
@@ -27,7 +27,7 @@ CONFIG_PATH  = os.path.join(BASE_DIR, "config.yaml")
 
 # Output directory (where checkpoints & logs will go)
 # You had a "MODELS_DIR" but let's define an explicit output directory:
-OUTPUT_DIR = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/models/trained"
+OUTPUT_DIR = "/home/rileymcnamara09/Australian-Medical-Form-Scanner/models/trained"
 
 # -----------------------------------------------------------------------------
 # 2. Register the Datasets with Detectron2
@@ -75,7 +75,7 @@ def build_config():
     # Where to store training logs and checkpoints:
     cfg.OUTPUT_DIR = OUTPUT_DIR
 
-    cfg.MODEL.DEVICE = "mps"
+    cfg.MODEL.DEVICE = "cuda"
 
     return cfg
 
