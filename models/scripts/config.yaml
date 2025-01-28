@@ -1,4 +1,4 @@
-_BASE_: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/.venv/lib/python3.8/site-packages/detectron2/model_zoo/configs/COCO-Detection/fast_rcnn_R_50_FPN_1x.yaml"
+_BASE_: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/env/lib/python3.9/site-packages/detectron2/model_zoo/configs/COCO-Detection/fast_rcnn_R_50_FPN_1x.yaml"
 
 MODEL:
   PROPOSAL_GENERATOR:
