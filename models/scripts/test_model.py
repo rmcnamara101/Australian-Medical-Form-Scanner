@@ -12,7 +12,7 @@ from detectron2.data.datasets import register_coco_instances
 # -----------------------------------------------------------------------------
 # Path to your trained model
 MODEL_WEIGHTS = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/models/trained/model_final.pth"  # Update with the path to your downloaded model
-CONFIG_PATH = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/models/scripts/config.yaml"  # Update with the path to your config.yaml
+CONFIG_PATH = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/models/scripts/config_home.yaml"  # Update with the path to your config.yaml
 
 # Path to test images
 TEST_IMAGES_DIR = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/datasets/images/test"  # Update with the folder containing test images

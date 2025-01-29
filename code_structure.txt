@@ -2,11 +2,11 @@ layout-detection-model/
 │
 ├── datasets/
 │   ├── annotations/       # Annotations for training and testing (e.g., COCO format JSON files)
-│        ├── train.json
-│        └── val.json
+│   │    ├── train.json
+│   │    └── val.json
 │   ├── images/            # Original and augmented images for training/testing
-│        ├── train/
-│        └── val/
+│   │    ├── train/
+│   │    └── val/
 │   ├── scripts/           # Scripts for dataset preparation and augmentation
 │   ├── prepped/           # Where the full data set exists
 │   └── result.json        # results json in coco format
