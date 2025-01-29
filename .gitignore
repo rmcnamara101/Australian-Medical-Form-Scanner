@@ -7,3 +7,7 @@ datasets/images/train/
 datasets/images/val/
 datasets/prepped/
 models/pretrained/
+datasets/images/test/
+output/test_results/
+models/scripts/config_home.yaml
+models/trained

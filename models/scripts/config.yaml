@@ -1,10 +1,10 @@
-_BASE_: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/env/lib/python3.9/site-packages/detectron2/model_zoo/configs/COCO-Detection/fast_rcnn_R_50_FPN_1x.yaml"
+_BASE_: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/env/lib/python3.8/site-packages/detectron2/model_zoo/configs/COCO-Detection/fast_rcnn_R_50_FPN_1x.yaml"
 
 MODEL:
   PROPOSAL_GENERATOR:
     NAME: "RPN"
   LOAD_PROPOSALS: False
-  WEIGHTS: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/models/pretrained/pretrained1.pkl"
+  WEIGHTS: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/Australian-Medical-Form-Scanner/models/pretrained/model_final.pth"
   ROI_HEADS:
     NUM_CLASSES: 9
 
@@ -25,4 +25,4 @@ DATALOADER:
   NUM_WORKERS: 4
 
 
-OUTPUT_DIR: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/models/trained"
+OUTPUT_DIR: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/Australian-Medical-Form-Scanner/models/trained"
