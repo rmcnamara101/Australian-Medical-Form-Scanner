@@ -1,5 +1,5 @@
-torch==2.4.1
-torchaudio==2.4.1
+torch==2.0.1
+torchaudio==2.0.1
 torchvision==0.19.1
 absl-py==2.1.0
 antlr4-python3-runtime==4.9.3
