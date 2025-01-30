@@ -2,10 +2,12 @@ import os
 import sys
 import cv2
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
 from src.preprocessing.prepare_image import ImagePreparer
 
 # Define paths
-file_path = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/datasets/images/scans/"
+file_path = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/datasets/scans/"
 save_path = "/Users/rileymcnamara/CODE/2025/Australian-Medical-Form-Scanner/datasets/images/prepped/"
 
 # Ensure the save path exists

@@ -5,6 +5,7 @@ __pycache__/
 datasets/scans/
 datasets/images/train/
 datasets/images/val/
+datasets/images/prepped/
 datasets/prepped/
 models/pretrained/
 datasets/images/test/

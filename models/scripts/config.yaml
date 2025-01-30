@@ -18,8 +18,9 @@ SOLVER:
   BASE_LR: 0.001
 
 INPUT:
-  MIN_SIZE_TRAIN: (600,)
-  MAX_SIZE_TRAIN: 1000
+  MIN_SIZE_TRAIN: (768,)  # Match original dataset size
+  MAX_SIZE_TRAIN: 1333  # Default Detectron2 setting
+
 
 DATALOADER:
   NUM_WORKERS: 4
