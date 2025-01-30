@@ -76,11 +76,13 @@ def process_instances(instances: Instances, class_names: list) -> dict:
     max_scores = np.zeros(len(unique_classes))
     best_boxes = np.zeros((len(unique_classes), 4))
     
-    outputs = predictor(image)
-    instances = outputs["instances"].to("cpu")
-    boxes = instances.pred_boxes.tensor.numpy() if instances.has("pred_boxes") else None
-    scores = instances.scores.numpy() if instances.has("scores") else None
-    classes = instances.pred_classes.numpy() if instances.has("pred_classes") else None
+    for i, class_idx in enumerate(unique_classes):
+        mask = classes == class_idx
+        if mask.any():
+            class_scores = scores[mask]
+            max_score_idx = np.argmax(class_scores)
+            max_scores[i] = class_scores[max_score_idx]
+            best_boxes[i] = boxes[mask][max_score_idx]
     
     return {
         class_names[class_idx]: {
