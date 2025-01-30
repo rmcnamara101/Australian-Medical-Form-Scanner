@@ -1,3 +1,6 @@
+torch==2.4.1
+torchaudio==2.4.1
+torchvision==0.19.1
 absl-py==2.1.0
 antlr4-python3-runtime==4.9.3
 black==24.8.0
@@ -67,9 +70,6 @@ tensorboard==2.14.0
 tensorboard-data-server==0.7.2
 termcolor==2.4.0
 tomli==2.2.1
-torch==2.4.1
-torchaudio==2.4.1
-torchvision==0.19.1
 tqdm==4.67.1
 typing_extensions==4.12.2
 tzdata==2025.1
