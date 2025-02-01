@@ -12,3 +12,4 @@ datasets/images/test/
 output/test_results/
 models/scripts/config_home.yaml
 models/trained
+datasets/images/train1/
