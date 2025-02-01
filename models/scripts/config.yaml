@@ -4,7 +4,6 @@ MODEL:
   PROPOSAL_GENERATOR:
     NAME: "RPN"
   LOAD_PROPOSALS: False
-  WEIGHTS: "/home/rileymcnamara09/Australian-Medical-Form-Scanner/Australian-Medical-Form-Scanner/models/pretrained/model_final.pth"
   ROI_HEADS:
     NUM_CLASSES: 9
 
