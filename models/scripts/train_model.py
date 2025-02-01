@@ -19,7 +19,7 @@ TRAIN_JSON = os.path.join(DATASET_DIR, "annotations", "train.json")
 VAL_JSON   = os.path.join(DATASET_DIR, "annotations", "val.json")
 
 # Paths to your image folders
-TRAIN_IMAGES = os.path.join(DATASET_DIR, "images", "train")
+TRAIN_IMAGES = os.path.join(DATASET_DIR, "images", "train/actual_train")
 VAL_IMAGES   = os.path.join(DATASET_DIR, "images", "val")
 
 # Path to config.yaml (the one referencing the model zoo)
