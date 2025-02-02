@@ -15,3 +15,5 @@ models/trained
 datasets/images/train1/
 datasets/images/train2/
 datasets/images/actual_train/
+my_backend/
+label-studio-ml-backend
